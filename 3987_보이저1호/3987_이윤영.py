@@ -41,7 +41,7 @@ def find_signal(row, col):
             cnt += 1  # 한걸음마다 카운트 세준다.
             nr += dr[dir]
             nc += dc[dir]
-            if row == nr and col == nc: # 나를 다시 만났다는것은 무한루프라는 의미!
+            if row == nr and col == nc and i==dir: # 나를 다시 만났다는것은 무한루프라는 의미!
                 if i == 0:
                     direction = 'U'
                 elif i == 1:
